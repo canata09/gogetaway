@@ -1,0 +1,42 @@
+
+.mdc-top-app-bar--short {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff
+}
+
+@media (max-width: 839px) {
+    .mdc-top-app-bar__row {
+        height: auto !important;
+    }
+}
+
+.mdc-top-app-bar--fixed-adjust {
+    width: 100%;
+    padding-top: 90px;
+}
+
+@media (max-width: 599px) {
+    .mdc-top-app-bar--fixed-adjust {
+        width: 100%;
+        padding-top: 85px;
+    }
+}
+
+.mdc-bottom-app-bar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    z-index: 10;
+}

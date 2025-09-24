@@ -1,0 +1,33 @@
+
+.container {
+    background: transparent;
+    height: auto;
+    width: 100%;
+    padding: 0% 15%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+
+/*
+ * Main Grid
+ */
+ 
+.full-width-grid {
+    height: auto;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.centered-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 0 16px;
+}

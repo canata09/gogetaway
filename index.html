@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Block Level CSS -->
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="assets/css/standard.css">
+  <link rel="stylesheet" href="assets/css/table.css">
+
+  <!-- Inline Level CSS -->
+  <link rel="stylesheet" href="assets/css/template.css">
+
+  <!-- MDC CSS -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@material/typography/dist/mdc.typography.css">
+
+  <!-- MDC JavaScript -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+  <style>
+
+  </style>
+
+  <!-- MDC Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Optional: Roboto font (Material Design uses it by default) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body className="mdc-typography" id="root">
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function Home() {
+      return (
+        <div className="mdc-layout-grid full-width-grid">
+          <div className="mdc-layout-grid__inner">
+
+            <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-1-desktop">
+
+            </div>
+            <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-10-desktop">
+              <h1>Home</h1>
+              <p>Home is a page that contains a forum.</p>
+            </div>
+            <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-1-desktop">
+
+            </div>
+
+          </div>
+        </div>
+      );
+    };
+
+    function PrivacyPolicy() {
+      return (
+        <div className="mdc-layout-grid full-width-grid">
+          <div className="mdc-layout-grid__inner">
+
+            <div
+              className="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-1-desktop"
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+
+            </div>
+            <div
+              className="two mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-10-desktop"
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '80px 56px',
+                marginBottom: '160px',
+                boxShadow:
+                  '0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2)',
+                backgroundColor: '#fff'
+              }}
+            >
+
+
+              <nav
+                className="breadcrumb mdc-typography"
+                aria-label="Breadcrumb"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  fontSize: '14px'
+                }}
+              >
+                <a
+                  href="/"
+                  className="mdc-typography--body2 mdc-ripple-surface"
+                  style={{
+                    textDecoration: 'none',
+                    color: '#6200ee',
+                    marginRight: '4px'
+                  }}
+                >
+                  Anasayfa
+                </a>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    margin: '0 4px'
+                  }}
+                >
+                  /
+                </span>
+                <a
+                  href="/kategori"
+                  className="mdc-typography--body2 mdc-ripple-surface"
+                  style={{
+                    textDecoration: 'none',
+                    color: '#6200ee',
+                    marginRight: '4px'
+                  }}
+                >
+                  Kategori
+                </a>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    margin: '0 4px'
+                  }}
+                >
+                  /
+                </span>
+                <span
+                  className="mdc-typography--body2"
+                  style={{
+                    color: '#000'
+                  }}
+                >
+                  Ürün
+                </span>
+              </nav>
+
+              <section
+                className="mdc-typography"
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  marginTop: '32px'
+                }}
+              >
+                <h4 className="mdc-typography--headline4">Arcturus Mengsk</h4>
+
+                <p className="mdc-typography--body1">
+                  Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor...
+                </p>
+                <p className="mdc-typography--body1">
+                  Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation...
+                </p>
+                {/* Diğer paragraflar buraya aynı şekilde devam eder */}
+
+                <p className="mdc-typography--body1">
+                  <a
+                    href="https://example.com"
+                    className="mdc-typography--body1"
+                  >
+                    Daha fazla bilgi
+                  </a>
+                </p>
+
+                <span className="mdc-typography--caption">Valerian Mengsk</span>
+              </section>
+
+            </div>
+            <div
+              className="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-1-desktop"
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+
+            </div>
+
+          </div>
+        </div>
+      );
+    };
+
+    const pagesMap = {
+      home: Home,
+      privacypolicy: PrivacyPolicy,
+    };
+
+    function Sidemenu({ handleClick }) {
+
+      return (
+        <>
+          <aside className="mdc-drawer mdc-drawer--modal">
+            <div className="mdc-drawer__content">
+              <nav className="mdc-list">
+                <a className="mdc-list-item mdc-list-item--activated" href="#"
+                  aria-current="page" tabIndex="0"
+                  onClick={() => handleClick('home')}
+                >
+                  <span className="mdc-list-item__ripple"></span>
+                  <i className="material-icons mdc-list-item__graphic">inbox</i>
+                  <span className="mdc-list-item__text">Home</span>
+                </a>
+                <a className="mdc-list-item" href="#"
+                  onClick={() => handleClick('privacypolicy')}
+                >
+                  <span className="mdc-list-item__ripple"></span>
+                  <i className="material-icons mdc-list-item__graphic">drafts</i>
+                  <span className="mdc-list-item__text">PrivacyPolicy</span>
+                </a>
+              </nav>
+            </div>
+          </aside>
+          <div className="mdc-drawer-scrim"></div>
+        </>
+      );
+    };
+
+    function Header() {
+      const [page, setPage] = useState('home');
+
+      const handleClick = (newPage) => {
+        setPage(newPage);
+      };
+
+      useEffect(() => {
+        const topAppBarElement = document.querySelector('.mdc-top-app-bar--short');
+        const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(topAppBarElement);
+        topAppBar.setScrollTarget(document.querySelector('.main-content'));
+        topAppBar.listen('MDCTopAppBar:nav', () => {
+          const drawerElement = document.querySelector('.mdc-drawer');
+          const drawer = mdc.drawer.MDCDrawer.attachTo(drawerElement);
+          drawer.open = !drawer.open;
+        });
+      }, []);
+
+      const SelectedPage = pagesMap[page];
+
+      return (
+        <>
+          <Sidemenu handleClick={handleClick} />
+
+          <div className="mdc-drawer-app-content">
+
+            <header className="mdc-top-app-bar--short">
+              <div className="mdc-top-app-bar__row">
+                <div className="mdc-layout-grid full-width-grid">
+                  <div className="mdc-layout-grid__inner">
+
+                    <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-0-phone mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+
+                    </div>
+                    <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-10-desktop">
+
+
+                      <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <button
+                          className="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">
+                          menu
+                        </button>
+                        <span className="mdc-top-app-bar__title">My App</span>
+                      </section>
+
+                    </div>
+                    <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-0-phone mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </header>
+
+
+            <main className="main-content mdc-top-app-bar--fixed-adjust">
+              <SelectedPage />
+
+              <div className="mdc-bottom-app-bar">
+                <div className="mdc-layout-grid container">
+                  {/* Component */}
+                  <div className="mdc-layout-grid__inner">
+                    {/* Full Width Component */}
+                    <div
+                      className="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"
+                      style={{
+                        borderTop: '1px solid #555',
+                        paddingTop: '12px',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        flexWrap: 'wrap',
+                        gap: '16px'
+                      }}
+                    >
+                      <div className="mdc-logo">Title</div>
+
+                      <ul
+                        className="mdc-list"
+                        style={{
+                          display: 'flex',
+                          listStyle: 'none',
+                          gap: '16px',
+                          margin: 0,
+                          padding: 0
+                        }}
+                      >
+                        <li
+                          className="mdc-list-item"
+                          tabIndex="0"
+                          style={{ margin: '4px 0' }}
+                        >
+                          <span className="mdc-list-item__ripple"></span>
+                          <a
+                            href="https://example.com"
+                            className="mdc-list-item__text"
+                            style={{
+                              textDecoration: 'none',
+                              color: '#bbb',
+                              fontSize: '13px'
+                            }}
+                          >
+                            Help
+                          </a>
+                        </li>
+
+                        <li className="mdc-list-item">
+                          <span className="mdc-list-item__ripple"></span>
+                          <a
+                            href="https://example.com"
+                            className="mdc-list-item__text"
+                            style={{
+                              textDecoration: 'none',
+                              color: '#bbb',
+                              fontSize: '13px'
+                            }}
+                          >
+                            Privacy & Terms
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </main>
+
+          </div>
+        </>
+      );
+    };
+
+    function App() {
+
+      return (
+        <Header />
+      );
+    };
+
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(
+
+      <App />
+
+    )
+  </script>
+
+</body>
+
+</html>
